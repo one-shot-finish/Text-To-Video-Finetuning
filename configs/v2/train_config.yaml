@@ -12,10 +12,10 @@ output_dir: "./outputs"
 # 'json': The JSON file created with automatic BLIP2 captions using https://github.com/ExponentialML/Video-BLIP2-Preprocessor
 # 'single_video': A single video file.mp4 and text prompt
 dataset_types: 
-  - 'image'
+  # - 'image'
   - 'folder'
-  - 'json'
-  - 'single_video'
+  # - 'json'
+  # - 'single_video'
 
 # Adds offset noise to training. See https://www.crosslabs.org/blog/diffusion-with-offset-noise
 offset_noise_strength: 0.1
@@ -84,7 +84,7 @@ train_data:
   n_sample_frames: 8
   
   # 'single_video'
-  single_video_path: "path/to/single/video.mp4"
+  # single_video_path: "path/to/single/video.mp4"
 
   # The prompt when using a a single video file
   single_video_prompt: ""
@@ -93,13 +93,13 @@ train_data:
   fallback_prompt: ''
   
   # 'folder'
-  path: "path/to/folder/of/videos/"
+  path: "./videos"
 
   # 'json'
-  json_path: 'path/to/train/json/'
+  # json_path: 'path/to/train/json/'
 
   # 'image'
-  image_dir: 'path/to/image/directory'
+  # image_dir: 'path/to/image/directory'
 
   # The prompt for all image files. Leave blank to use caption files (.txt) 
   single_img_prompt: ""
