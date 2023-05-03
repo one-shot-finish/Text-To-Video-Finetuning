@@ -90,6 +90,7 @@ def get_train_dataset(dataset_types, train_data, tokenizer):
         raise ValueError("Dataset type not found: 'json', 'single_video', 'folder', 'image'")
 
 def extend_datasets(datasets, dataset_items, extend=False):
+    import pdb; pdb.set_trace()
     biggest_data_len = max(x.__len__() for x in datasets)
     extended = []
     for dataset in datasets:
