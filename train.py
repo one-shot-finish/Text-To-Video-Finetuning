@@ -676,6 +676,7 @@ def main(
         shuffle=True
     )
 
+    import pdb; pdb.set_trace()
      # Latents caching
     cached_data_loader = handle_cache_latents(
         cache_latents, 
