@@ -574,7 +574,7 @@ def main(
 ):
 
     *_, config = inspect.getargvalues(inspect.currentframe())
-    import pdb; pdb.set_trace()
+    # import pdb; pdb.set_trace()
 
     accelerator = Accelerator(
         gradient_accumulation_steps=gradient_accumulation_steps,
