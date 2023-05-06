@@ -143,7 +143,7 @@ extra_text_encoder_params: null
   #adam_weight_decay: 0.2
 
 # How many batches to train. Not to be confused with video frames.
-train_batch_size: 1000
+train_batch_size: 10000
 
 # Maximum number of train steps. Model is saved after training.
 max_train_steps: 10000
