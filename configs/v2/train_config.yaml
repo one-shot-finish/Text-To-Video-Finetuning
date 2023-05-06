@@ -93,7 +93,7 @@ train_data:
   fallback_prompt: ''
   
   # 'folder'
-  path: "./videos"
+  path: "/content/Text-To-Video-Finetuning/videos"
 
   # 'json'
   # json_path: 'path/to/train/json/'
