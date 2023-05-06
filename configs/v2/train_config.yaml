@@ -13,9 +13,9 @@ output_dir: "./outputs"
 # 'single_video': A single video file.mp4 and text prompt
 dataset_types: 
   # - 'image'
-  - 'folder'
+  # - 'folder'
   # - 'json'
-  # - 'single_video'
+  - 'single_video'
 
 # Adds offset noise to training. See https://www.crosslabs.org/blog/diffusion-with-offset-noise
 offset_noise_strength: 0.1
@@ -90,10 +90,10 @@ train_data:
   single_video_prompt: "/content/Text-To-Video-Finetuning/videos/1isc7kyqiYrfGfAdO1.txt"
 
   # Fallback prompt if caption cannot be read. Enabled for 'image' and 'folder'.
-  fallback_prompt: ''
+  fallback_prompt: 'F*** you'
   
   # 'folder'
-  path: "/content/Text-To-Video-Finetuning/videos"
+  # path: "/content/Text-To-Video-Finetuning/videos"
 
   # 'json'
   # json_path: 'path/to/train/json/'
@@ -102,7 +102,7 @@ train_data:
   # image_dir: 'path/to/image/directory'
 
   # The prompt for all image files. Leave blank to use caption files (.txt) 
-  single_img_prompt: ""
+  # single_img_prompt: ""
 
 # Validation data parameters.
 validation_data:
