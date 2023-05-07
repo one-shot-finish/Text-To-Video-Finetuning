@@ -130,6 +130,7 @@ def create_output_folders(output_dir, config):
     return out_dir
 
 def load_primary_models(pretrained_model_path):
+    import pdb; pdb.set_trace()
     noise_scheduler = DDPMScheduler.from_pretrained(pretrained_model_path, subfolder="scheduler")
     tokenizer = CLIPTokenizer.from_pretrained(pretrained_model_path, subfolder="tokenizer")
     text_encoder = CLIPTextModel.from_pretrained(pretrained_model_path, subfolder="text_encoder")
