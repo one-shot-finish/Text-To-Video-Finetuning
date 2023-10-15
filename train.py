@@ -581,7 +581,7 @@ def main(
         gradient_accumulation_steps=gradient_accumulation_steps,
         mixed_precision=mixed_precision,
         log_with="tensorboard",
-        logging_dir=output_dir
+        # logging_dir=output_dir
     )
 
     # Make one log on every process with the configuration for debugging.
